@@ -1,0 +1,9 @@
+#specify a base image
+FROM haisarusi/alpinenpm
+
+#install some dependencies
+#RUN apk add --update npm 
+RUN npm install 
+
+#Default command
+CMD ["npm","start"]
