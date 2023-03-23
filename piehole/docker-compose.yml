@@ -1,4 +1,6 @@
 version: "3"
+#create 2 presisntent volumes , the volumes will get the dokcer name : piehole_app 
+#need to declaer the volumes outside the service 
 volumes:
   app:
   config:  
@@ -14,6 +16,7 @@ services:
     environment:
       TZ: 'Asia/Jerusalem'
       WEBPASSWORD: 'Ss@56243971'
+    #maps each folder to presisntent volume  
     volumes:
       - app:/etc/pihole/
       - config:/etc/dnsmasq.d/
