@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis-server:
+    #container_name: redis
+    image: 'redis'
+  node-app:
+    build: . #will look in the folder for docker filer and use it to build the container 
+    ports:
+      - "4001:8081"
