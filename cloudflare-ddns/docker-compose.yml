@@ -1,0 +1,10 @@
+version: '2'
+services:
+  cloudflare-ddns:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=HmEJLFYeGEzvQD8eAoA0Dju8_euo5QrZ-admGKLQ
+      - ZONE=hailab.online
+      - SUBDOMAIN=test
+      - PROXIED=false
