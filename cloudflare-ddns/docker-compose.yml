@@ -8,3 +8,4 @@ services:
       - ZONE=hailab.online
       - SUBDOMAIN=test
       - PROXIED=false
+ 

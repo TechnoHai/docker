@@ -1,9 +1,6 @@
 version: "3"
 #create 2 presisntent volumes , the volumes will get the dokcer name : piehole_app 
 #need to declaer the volumes outside the service 
-volumes:
-  app:
-  config:  
 services:
   pihole:
     container_name: pihole
@@ -22,6 +19,9 @@ services:
       - config:/etc/dnsmasq.d/
       
     restart: unless-stopped
+volumes:
+  app:
+  config:  
 
 
 
