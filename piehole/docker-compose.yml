@@ -12,7 +12,7 @@ services:
       - "81:80/tcp"
     environment:
       TZ: 'Asia/Jerusalem'
-      WEBPASSWORD: 'Ss@56243971'
+      WEBPASSWORD: 'pasword'
     #maps each folder to presisntent volume  
     volumes:
       - app:/etc/pihole/

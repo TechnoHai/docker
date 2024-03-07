@@ -11,7 +11,7 @@ services:
       - "81:80/tcp"
     environment:
       TZ: 'Asia/Jerusalem'
-      WEBPASSWORD: 'Ss@56243971'
+      WEBPASSWORD: 'password'
     volumes:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
